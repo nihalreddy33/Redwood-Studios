@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/aboutus/aboutus.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/aboutus/aboutus.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/aboutus/aboutus.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/clients/clients.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/clients/clients.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/clients/clients.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/contactus/contactus.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/contactus/contactus.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/contactus/contactus.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/home/home.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/home/home.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/home/home.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/pages.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/pages.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/pages.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/team/team.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/team/team.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/team/team.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/work/work.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/work/work.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/pages/work/work.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/request-info/request-info.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/request-info/request-info.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partial/request-info/request-info.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/popups/partial/video-player-popup/video-player-popup-service.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/popups/partial/video-player-popup/video-player-popup.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/popups/partial/video-player-popup/video-player-popup.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/popups/partial/video-player-popup/video-player-popup.less" charset="UTF-8" />
+  </component>
+</project>

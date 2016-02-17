@@ -1,0 +1,276 @@
+@import "bower_components/bootstrap/less/bootstrap.less";
+//@import "bower_components/bootstrap/less/theme.less";
+@import "bower_components/font-awesome/less/font-awesome.less";
+@fa-font-path: "bower_components/font-awesome/fonts";
+
+/* Component LESS */
+@import "partial/pages/pages.less";
+@import "partial/header/header.less";
+@import "partial/footer/footer.less";
+@import "partial/pages/home/home.less";
+@import "partial/pages/aboutus/aboutus.less";
+@import "partial/pages/work/work.less";
+@import "partial/pages/contactus/contactus.less";
+@import "partial/request-info/request-info.less";
+@import "popups/popups.less";
+@import "partial/pages/clients/clients.less";
+@import "partial/pages/team/team.less";
+/* Add Component LESS Above */
+
+/* Required for Angular UI Bootstrap */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.no-padding{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+@font-face {
+    font-family: kalinga;
+    src: url(assets/font/kalinga.ttf);
+}
+
+.form-control{
+    background-color: #dddddd;
+    border: none;
+    color: #000000;
+    border-radius: 0px;
+}
+
+.dropdown-toggle{
+    background-color: #dddddd;
+    border: none;
+    color: #575757;
+    border-radius: 0px;
+}
+
+.dd-menu{
+    background-color: #dddddd;
+    border: none;
+    color: #AD1718;
+    border-radius: 0px;
+}
+
+.custom-button{
+    background-color: #EF5350;
+}
+.navbar-static-top{
+    top:0px;
+}
+
+.required:after{
+    content:"*";
+    color: #ff0000;
+}
+
+.error-text{
+    font-size: 10px;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.nav-icon{
+    color: #2E2C2D;
+}
+
+.test{
+    margin-left: 250px;
+}
+
+textarea {
+    resize: none;
+}
+
+@media screen and (max-width: 989px) {
+    h1{
+        margin: 15px 0px 0px 0px;
+        font-weight: bold;
+    }
+
+    hr{
+        border-color: #EBEAE9;
+        margin-top:5px;
+        margin-bottom:10px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    h1{
+        margin: 0px 0px 0px 0px;
+        font-weight: bold;
+    }
+    hr{
+        border-color: #EBEAE9;
+        margin-top:5px;
+        margin-bottom:10px;
+        width: 60%;
+    }
+}
+
+//For kindle and tab view
+@media screen and (min-width: 766px) and (max-width: 991px){
+    .footer-container{
+        position: fixed;
+        bottom: 0px;
+        text-align: center;
+        width: 100%;
+    }
+    .contact-form-container{
+        padding-top: 10px;
+    }
+}
+//For mobile view
+@media screen and (max-width: 640px) {
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 11px;
+    }
+    label{
+        font-size: 11px;
+    }
+    .form-control{
+        font-size: 11px;
+    }
+    .dropdown{
+        .dropdown-toggle{
+            font-size: 11px;
+            padding: 2px 2px 2px 12px;
+            line-height: 22px;
+        }
+        .dropdown-menu{
+            margin-top: 0px;
+            li{
+                a{
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    .page-container{
+        .image-container{
+            .banner-text{
+                font-size: 30px;
+            }
+            .sub-banner-text{
+                font-size: 12px;
+            }
+        }
+    }
+    .work-container{
+        .video-container{
+            p{
+                font-size: 11px;
+            }
+        }
+    }
+    .footer-content{
+        p{
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:990px){
+    .large-carousel{
+        display: none;
+    }
+}
+
+@media screen and (min-width:991px){
+    .small-carousel{
+        display: none;
+    }
+    .left-navigator{
+        display: none;
+    }
+    .right-navigator{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .small-carousel{
+        .video-container{
+            .dummy-video{
+                height: 200px;
+            }
+        }
+        .left-navigator{
+            padding-right: 150px;
+            .nav-icon{
+                color: #ffffff;
+            }
+        }
+        .right-navigator{
+            padding-left: 150px;
+            .nav-icon{
+                color: #ffffff;
+            }
+        }
+    }
+}
+@media screen and (max-width:640px){
+    .small-carousel{
+        .video-container{
+            .dummy-video{
+                height: 200px;
+            }
+        }
+        .left-navigator{
+            padding-right: 58px;
+            .nav-icon{
+                color: #ffffff;
+            }
+        }
+        .right-navigator{
+            padding-left: 58px;
+            .nav-icon{
+                color: #ffffff;
+            }
+        }
+    }
+}
+@media screen and (max-width:480px){
+    .small-carousel{
+        .video-container{
+            .dummy-video{
+                height: 150px;
+            }
+        }
+        .left-navigator{
+            padding-right: 20px;
+            .nav-icon{
+                color: #2E2C2D;
+            }
+        }
+        .right-navigator{
+            padding-left: 20px;
+            .nav-icon{
+                color: #2E2C2D;
+            }
+        }
+    }
+}
+
+/*@media screen and (min-width: 991px){
+    .footer-container{
+        position: relative;
+        bottom: 0px;
+        text-align: right;
+        width: 100%;
+    }
+}*/
+
+/* Personal preference for BS modal.  The LESS below makes the backdrop white and
+   causes the modal to fade in rather than slide in. */
+//@modal-backdrop-bg: white;
+//.modal {
+//	&.fade {
+//		.transition(opacity .3s);
+//	}
+//	&.fade .modal-dialog {
+//		.translate(0,0);
+//	}
+//}

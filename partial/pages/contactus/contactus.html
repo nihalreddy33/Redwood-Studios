@@ -1,0 +1,34 @@
+<div class="col-md-12 contact-us-container" data-ng-controller="ContactusCtrl">
+    <div class="col-md-12">
+        <h1>Leave a Message</h1>
+        <hr align="center"/>
+        <div class="">
+            <form name="contactForm" class="contact-form form-horizontal">
+                <div class="form-group">
+                    <label for="nameInput" class="col-md-2 col-sm-2 control-label required">Name</label>
+                    <div class="col-md-8 col-sm-8">
+                        <input name="cname" type="text" class="form-control" id="nameInput" placeholder="Name" data-ng-required="true" data-ng-model="contactDetails.name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="emailInput" class="col-md-2 col-sm-2 control-label required">Email</label>
+                    <div class="col-md-8 col-sm-8">
+                        <input name="cemail" type="email" class="form-control" id="emailInput" placeholder="Email" data-ng-required="true" data-ng-model="contactDetails.email">
+                        <p class="error-text" data-ng-show="contactDetails.email!='' && contactForm.cemail.$dirty && !contactForm.cemail.$valid">Please enter a valid Email Id</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="descInput" class="col-md-2 col-sm-2 control-label required">Description</label>
+                    <div class="col-md-8 col-sm-8">
+                        <textarea name="cdesc" id="descInput" class="form-control" rows="3" placeholder="Enter Description" data-ng-required="true" data-ng-model="contactDetails.desc"></textarea>
+                    </div>
+                    <div class="col-md-2 col-sm-2 button-holder">
+                        <button type="button" class="btn btn-danger" data-ng-disabled="!contactForm.$valid" data-ng-click="sendDetails()">
+                            <span class="fa fa-envelope-o fa-3x"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="col-md-12 team-container" ng-controller="TeamCtrl">
+    <div class="col-md-12">
+        <h1>Our Core Team</h1>
+        <hr align="center"/>
+        <div class="col-md-12 col-sm-12 no-padding desktop-team-container">
+            <div ng-repeat="mate in teamList" class="col-md-4 col-sm-4 team-mates-container">
+                <div class="col-md-12 col-sm-12 no-padding team-mate" id="team{{mate.id}}">
+                    <div class="team-mate-info">
+                        <div class="description">
+                            <p>
+                                Bootstrap is a framework that uses some of the latest browser techniques to provide you with stylish typography, navigation, buttons, tables, etc. One of the primary changes in Bootstrap 3 is an emphasis on Mobile-First responsive design. The goal is to elevate the mobile experience to a first-class citizen of the design process, because several billion mobile users is quite a large market to tap into. So, sites built with the current Bootstrap version target mobile devices and scale for larger screens depending on screen size.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team-mate-name">
+                        <span class="emp-name">EMPLOYEE NAME</span><br>
+                        <span class="designation">DESIGNATION</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

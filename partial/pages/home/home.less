@@ -1,0 +1,65 @@
+.home-container{
+    text-align: center;
+    .image-container{
+        background: url("assets/images/crayons-image.jpg");
+        background-attachment: fixed;
+        background-size:cover;
+        height: 400px;
+        padding-top: 100px;
+    }
+    .home-para{
+        padding: 0px;
+        font-weight: bold;
+    }
+    .author{
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .home-container{
+        padding-top: 0px;
+        p{
+            width:100%;
+            margin: auto!important;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .home-container{
+        padding-top: 50px;
+        p{
+            width:75%;
+            margin: auto!important;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .home-container {
+        .image-container {
+            background: url("assets/images/crayons-image.jpg");
+            background-attachment: fixed;
+            //height: 200px!important;
+            background-repeat: no-repeat;
+            background-position: 30% 30%;
+            background-size:cover;
+            padding-top: 0px;
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    .home-container {
+        .image-container {
+            background: url("assets/images/crayons-mobile-image.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            height: 300px;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+<div class="col-md-12 info-container no-padding" data-ng-controller="RequestInfoCtrl">
+    <div class="col-md-12 no-padding top-banner">
+        <div class="col-md-6" >
+            <a href="" data-ng-click="goBack()">
+                <img src="assets/images/images/web-image.png">
+            </a>
+        </div>
+        <div class="col-md-6 button-container">
+            <button type="button" class="btn btn-danger pull-right" data-ng-click="goBack()">Back</button>
+        </div>
+    </div>
+    <!--Mobile banner-->
+    <!--<div class="home-icon-holder pull-right">
+        <a href="" data-ng-click="goBack()">
+            <img class="home-icon" src="assets/images/home-icon.png">
+        </a>
+    </div>-->
+    <div class="col-md-12 col-sm-12 top-mobile-banner">
+        <a class="logo-container" href="" data-ng-click="goBack()">
+            <img src="assets/images/images/mobile-image.png">
+        </a>
+        <a href="" data-ng-click="goBack()">
+            <span class="home-icon fa fa-home fa-2x pull-right"></span>
+        </a>
+    </div>
+    <div class="col-md-9 col-sm-9 contact-form-container">
+        <form name="contactForm" class="contact-form form-horizontal">
+            <div class="form-group">
+                <label for="nameInput" class="col-md-3 col-sm-3 control-label required">Name</label>
+                <div class="col-md-5 col-sm-5">
+                    <input name="cname" type="text" class="form-control" id="nameInput" placeholder="Name" data-ng-required="true" data-ng-model="contactDetails.name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="orgInput" class="col-md-3 col-sm-3 control-label required">Organization Name</label>
+                <div class="col-md-5 col-sm-5">
+                    <input name="corg" type="text" class="form-control" id="orgInput" placeholder="Organization Name" data-ng-required="true" data-ng-model="contactDetails.orgName">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="service" class="col-md-3 col-sm-3 control-label required">Service</label>
+                <div class="col-md-5 col-sm-5">
+                    <div class="dropdown" data-ng-model="contactDetails.service">
+                        <button class="btn btn-default dropdown-toggle dd-btn" type="button" id="service" data-toggle="dropdown" data-ng-cloak>
+                            {{serviceName}}
+                            <span class="caret dd-caret pull-right"></span>
+                        </button>
+                        <ul class="dropdown-menu dd-menu" role="menu" aria-labelledby="service">
+                            <li role="presentation" data-ng-repeat="service in services">
+                                <a role="menuitem" tabindex="-1" href="" data-ng-click="selectService(service)" data-ng-cloak>{{service}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="req" class="col-md-3 col-sm-3 control-label required">Requirement</label>
+                <div class="col-md-5 col-sm-5">
+                    <input name="creq" type="text" class="form-control" id="req" placeholder="Requirement" data-ng-required="true" data-ng-model="contactDetails.requirement">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="emailInput" class="col-md-3 col-sm-3 control-label required">Email</label>
+                <div class="col-md-5 col-sm-5">
+                    <input name="cemail" type="email" class="form-control" id="emailInput" placeholder="Email" data-ng-required="true" data-ng-model="contactDetails.email">
+                    <p class="error-text" data-ng-show="contactDetails.email!='' && contactForm.cemail.$dirty && !contactForm.cemail.$valid">Please enter a valid Email Id</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cnumberInput" class="col-md-3 col-sm-3 control-label required">Contact Number</label>
+                <div class="col-md-5 col-sm-5">
+                    <input name="cnumber" type="text" class="form-control" id="cnumberInput" placeholder="Contact Number" data-ng-required="true" data-ng-model="contactDetails.contact">
+                    <p class="error-text" data-ng-show="contactDetails.contact!=null && contactForm.cnumber.$dirty && numberCheck()">Please enter a valid number</p>
+                    <p class="error-text" data-ng-show="contactDetails.contact!=null && contactForm.cnumber.$dirty && decimalCheck()">Please enter a valid number</p>
+                    <p class="error-text" data-ng-show="contactDetails.contact!=null && contactForm.cnumber.$dirty && contactDetails.contact.length > 10">Number should less than 10 digits</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="descInput" class="col-md-3 col-sm-3 control-label required">Description</label>
+                <div class="col-md-5 col-sm-5">
+                    <textarea name="cdesc" id="descInput" class="form-control" rows="3" placeholder="Enter Description" data-ng-required="true" data-ng-model="contactDetails.desc"></textarea>
+                </div>
+                <div class="col-md-3 col-sm-3 button-holder">
+                    <button type="button" class="btn btn-danger" data-ng-disabled="!contactForm.$valid || isNoService() || validNumber()" data-ng-click="sendDetails()">
+                        <span class="fa fa-envelope-o fa-3x"></span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

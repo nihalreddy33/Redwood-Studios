@@ -1,0 +1,64 @@
+<div class="col-md-12 no-padding page-container" data-ng-init="setProps()" data-ng-controller="PagesCtrl">
+    <div class="col-md-12 no-padding top-banner">
+        <div class="col-md-6" >
+            <img src="assets/images/images/web-image.png">
+        </div>
+        <div class="col-md-6 button-container">
+            <button type="button" class="btn btn-danger pull-right" data-ng-click="goToInfoPage()">
+                Business Contact
+            </button>
+        </div>
+    </div>
+    <!--Mobile banner-->
+    <div class="col-md-12 col-sm-12 top-mobile-banner" id="stick-bar">
+        <a class="logo-container" href="" data-ng-click="scrollTop()">
+            <img src="assets/images/images/mobile-image.png">
+        </a>
+        <div class="dropdown menu-icon pull-right">
+            <a href="" data-toggle="dropdown">
+                <span class="menu-icon-holder fa fa-2x fa-bars"></span>
+            </a>
+            <ul class="dropdown-menu dd-menu" role="menu" aria-labelledby="service">
+                <li role="presentation" data-ng-repeat="menu in menuList">
+                    <a role="menuitem" tabindex="-1" href="" data-ng-click="navClick(menu.id,menu.container)" data-ng-cloak><span ng-class="menu.iconclass" class="pull-left"></span>{{menu.label}}</a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="" data-ng-click="goToInfoPage()" data-ng-cloak><span class="fa fa-briefcase fa-3x pull-left"></span>Business Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-12 no-padding image-container">
+        <div class="banner-text">Virtuosity is Our Strength</div>
+        <div class="sub-banner-text">We work with you to help your organization grow</div>
+    </div>
+    <div class="navbar navbar-static-top col-md-12 sub-header stick-bar" id="nav">
+        <div class="container col-md-10 no-padding">
+            <div class="navbar-header">
+                <a href="" data-ng-click="scrollTop()">
+                    <div class="bean-icon no-padding"></div>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="links">
+                    <li data-ng-repeat="menu in menuList">
+                        <a href="" data-ng-click="navClick(menu.id,menu.container)">
+                            <span ng-class="menu.iconclass"></span> <span>{{menu.label}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2 button-container">
+            <button type="button" class="btn btn-danger pull-right" data-ng-click="goToInfoPage()">
+                Business Contact
+            </button>
+        </div>
+    </div>
+    <div id="home" data-ng-include="'partial/pages/home/home.html'"></div>
+    <div id="aboutus" data-ng-include="'partial/pages/aboutus/aboutus.html'"></div>
+    <!--<div id="team" data-ng-include="'partial/pages/team/team.html'"></div>-->
+    <div id="work" data-ng-include="'partial/pages/work/work.html'"></div>
+    <div id="clients" data-ng-include="'partial/pages/clients/clients.html'"></div>
+    <div id="contactus" data-ng-include="'partial/pages/contactus/contactus.html'"></div>
+</div>

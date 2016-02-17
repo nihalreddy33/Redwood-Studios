@@ -1,0 +1,67 @@
+.about-us-container{
+    text-align: center;
+    .style-span{
+        font-size: 250%;
+        color: #2E2C2D;
+    }
+    .style-span::first-letter{
+        font-size: 200%;
+        color: #AD1718;
+    }
+    .company-intro-video-tag{
+        iframe{
+            html{
+                body{
+                    background-color: #FFFFFF!important;
+                }
+            }
+        }
+    }
+    .image-container{
+        background: url("assets/images/camera-desktop.jpg");
+        background-attachment: fixed;
+        background-size:cover;
+        height: 400px;
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .about-us-container{
+        padding-top: 0px;
+        p{
+            width:100%;
+            margin: auto!important;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .about-us-container{
+        padding-top: 50px;
+        p{
+            width:75%;
+            margin: auto!important;
+            padding-bottom: 20px;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .about-us-container {
+        .style-span{
+            font-size: 150%;
+        }
+        .image-container {
+            background: url("assets/images/camera-mobile-image.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            height: 300px;
+            min-height:300px;
+        }
+    }
+}

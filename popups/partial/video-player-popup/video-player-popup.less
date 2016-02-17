@@ -1,0 +1,79 @@
+.modal-content{
+    border: none;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+.video-popup{
+    width: 650px;
+    right: 8%;
+    background: rgba(0,0,0,0);
+    -ms-transform: scale(0);
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    border-radius: 10px;
+    border: none;
+    min-height: 312px;
+    padding-left: 63px;
+    .player-video{
+        margin: auto;
+        .mejs-overlay-button {
+            display:none;
+        }
+    }
+    .disable-content{
+        pointer-events: all;
+        opacity: 0;
+        background: #CCC;
+        z-index: 20000;
+        height: 482px;
+        width: 86%;
+        position: absolute;
+    }
+    .close-button{
+        color: #000000;
+        z-index: 10000;
+        position: absolute;
+        right: -1px;
+        top: -5px;
+        padding: 5px;
+    }
+    .loader-icon{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        color: #AD1718;
+        .icon-holder{
+            height:50px;
+            float:left;
+        }
+    }
+    .product-info{
+        border-top: #AD1718 solid 1px;
+        background-color: #000000;
+        .ad-logo{
+            background-repeat: no-repeat;
+            background-size: 50%;
+            height: 45px;
+            margin: 10px 0px;
+        }
+        .ad-description-and-text{
+            padding: 10px 0px;
+            color: #ffffff;
+            font-size: 11px;
+        }
+    }
+}
+.video-popup.open-popup{
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -moz-transition-duration:2s;
+    -webkit-transition-duration:2s;
+    -ms-transition-duration:2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+
+}

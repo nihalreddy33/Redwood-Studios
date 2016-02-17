@@ -1,0 +1,92 @@
+.clients-container{
+    text-align:center;
+    h1{
+        margin: 15px 0px 0px 0px;
+        font-weight: bold;
+    }
+    .client-img-container{
+        margin: 0px 0px 10px 0px;
+        .client-brand-item{
+            background-repeat: no-repeat;
+            //background-size: 50%;
+            min-height: 100px;
+            background-position: center;
+        }
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .clients-container{
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 856px) {
+    .desktop-clients-container{
+        display: none;
+    }
+    .clients-container{
+        .client-img-container{
+            .client-brand-item{
+                background-repeat: no-repeat;
+                background-size: 100%;
+                min-height: 50px;
+                background-position: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 857px) {
+    .mobile-clients-container{
+        display: none;
+    }
+    .clients-container{
+        .client-img-container{
+            .client-brand-item{
+                background-repeat: no-repeat;
+                background-size: 40%;
+                min-height: 150px;
+                background-position: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 452px) and (max-width: 856px){
+    .clients-container{
+        .client-img-container{
+            .client-brand-item{
+                background-repeat: no-repeat;
+                background-size: 80%;
+                min-height: 100px;
+                background-position: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1000px){
+    .clients-container{
+        .client-img-container{
+            .client-brand-item{
+                background-repeat: no-repeat;
+                min-height: 100px;
+                background-position: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) and (min-width: 857px) {
+    .clients-container{
+        .client-img-container{
+            .client-brand-item{
+                background-repeat: no-repeat;
+                background-size: 22%;
+                min-height: 100px;
+                background-position: center;
+            }
+        }
+    }
+}

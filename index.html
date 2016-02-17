@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html data-ng-app="y">
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="assets/images/tree.jpg" type="image/x-icon">
+    <link href="app.less" type="text/css" rel="stylesheet/less">
+    <link href="bower_components/font-awesome/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="bower_components/mediaelement/build/mediaelementplayer.css" type="text/css" />
+</head>
+
+<body>
+
+    <!-- Livereload script for development only (stripped during dist build) -->
+    <script src="http://localhost:35729/livereload.js" data-concat="false"></script>
+
+    <!-- JS from Bower Components -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/less.js/dist/less-1.6.2.js" data-concat="false"></script>
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+
+
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
+    <script src="bower_components/mediaelement/build/mediaelement-and-player.min.js"></script>
+
+    <!-- Add New Bower Component JS Above -->
+
+
+    <!-- Main App JS -->
+    <script src="app.js"></script>
+    <script src="partial/pages/pages.js"></script>
+    <script src="partial/header/header.js"></script>
+    <script src="partial/footer/footer.js"></script>
+    <script src="partial/pages/home/home.js"></script>
+    <script src="partial/pages/aboutus/aboutus.js"></script>
+    <script src="partial/pages/work/work.js"></script>
+    <script src="partial/pages/contactus/contactus.js"></script>
+    <script src="partial/request-info/request-info.js"></script>
+    <script src="popups/popups.js"></script>
+    <script src="popups/partial/video-player-popup/video-player-popup.js"></script>
+    <script src="popups/service/popup-service.js"></script>
+    <script src="popups/partial/video-player-popup/video-player-popup-service.js"></script>
+    <script src="partial/pages/clients/clients.js"></script>
+    <script src="partial/pages/team/team.js"></script>
+    <!-- Add New Component JS Above -->
+
+    <div class="container-fluid no-padding">
+        <div data-ui-view="header" class="application-header"></div>
+        <section class="application-container">
+            <div data-ui-view></div>
+        </section>
+        <footer class="footer-container" data-ui-view="footer"></footer>
+    </div>
+
+</body>
+
+</html>

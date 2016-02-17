@@ -1,0 +1,152 @@
+.team-container{
+    overflow: hidden;
+    text-align:center;
+    h1{
+        margin: 15px 0px 0px 0px;
+        font-weight: bold;
+    }
+    .team-mates-container{
+        margin: 0px 0px 10px 0px;
+        .team-mate{
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: contain;
+            min-height: 415px;
+            background-position: center;
+            .team-mate-name{
+                text-align:left;
+                position: absolute;
+                bottom: 5px;
+                right: 70px;
+                background-color: #2E2C2D;
+                color: #ffffff;
+                padding: 10px;
+                font-weight: bold;
+                margin: auto;
+                width: 50%;
+                .emp-name{
+                    font-size: 12px;
+                }
+                .designation{
+                    font-size: 11px;
+                }
+                @media screen and (max-width: 370px) {
+                    right: 0px;
+                    width: 65%;
+                }
+            }
+            .team-mate-info{
+                display: none;
+                margin: auto;
+                width: 100%;
+                height: 415px;
+                top: 0px;
+                background: rgba(255, 255, 255,0.7);
+                position: absolute;
+                .description{
+                    width: 60%;
+                    padding: 10px;
+                    margin: auto;
+                    text-align: left;
+                    @media screen and (max-width: 1296px) {
+                        width: 75%;
+                    }
+                    @media screen and (max-width: 767px) {
+                        width: 100%;
+                    }
+                }
+                @media screen and (max-width: 639px) {
+                    width: 250px;
+                }
+                @media screen and (max-width: 619px) {
+                    width: 210px;
+                    left: 29%;
+                }
+                @media screen and (max-width: 585px) {
+                    left: 27%;
+                }
+                @media screen and (max-width: 530px) {
+                    left: 24%;
+                }
+                @media screen and (max-width: 480px) {
+                    left: 22%;
+                }
+                @media screen and (max-width: 470px) {
+                    left: 20%;
+                }
+                @media screen and (max-width: 434px) {
+                    left: 16%;
+                }
+                @media screen and (max-width: 407px) {
+                    left: 13%;
+                }
+                @media screen and (max-width: 385px) {
+                    left: 10%;
+                }
+                @media screen and (max-width: 360px) {
+                    left: 7%;
+                }
+                @media screen and (max-width: 344px) {
+                   left: 3%;
+                }
+            }
+        }
+        .team-mate:hover{
+            .team-mate-info{
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .team-container{
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 619px){
+    .team-container{
+        .team-mates-container{
+            width: 100%;
+            .team-mate{
+                min-height: 315px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 620px) and (max-width: 767px){
+    .team-container{
+        .team-mates-container{
+            width: 50%;
+            float: left;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 810px){
+    .team-container{
+        .team-mates-container{
+
+        }
+    }
+}
+
+@media screen and (min-width: 811px) and (max-width: 850px){
+    .team-container{
+        .team-mates-container{
+            .team-mate{
+                min-height: 370px;
+                .team-mate-name{
+
+                }
+                .team-mate-info{
+                    .description{
+
+                    }
+                }
+            }
+        }
+    }
+}

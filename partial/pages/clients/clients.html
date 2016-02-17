@@ -1,0 +1,16 @@
+<div class="col-md-12 clients-container" ng-controller="ClientsCtrl">
+    <div class="col-md-12">
+        <h1>Know them - To Partner with Us</h1>
+        <hr align="center"/>
+        <div class="col-md-12 col-lg-12 no-padding desktop-clients-container">
+            <div ng-repeat="client in clientsList" class="col-md-3 col-lg-3 client-img-container">
+                <div class="col-md-12 col-lg-12 no-padding client-brand-item" id="client{{client.id}}"></div>
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12 col-sm-12 no-padding mobile-clients-container">
+            <div ng-repeat="client in clientsList" class="col-md-4 col-xs-4 col-sm-4 client-img-container">
+                <div class="col-xs-12 no-padding client-brand-item" id="client-small{{client.id}}"></div>
+            </div>
+        </div>
+    </div>
+</div>
